@@ -35,8 +35,15 @@
     centerButton.layer.cornerRadius = 5;
     [self.view addSubview:centerButton];
     
+    [centerButton addTarget:self action:@selector(showAlert) forControlEvents:UIControlEventTouchUpInside];
+    
 }
-
+- (void)showAlert {
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"MiniWork" message:@"Hello world" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"Cancle" style:UIAlertActionStyleCancel handler:nil];
+    [alertVC addAction:cancleAction];
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
 
 
 @end

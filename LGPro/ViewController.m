@@ -17,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 44)];
+    label.center = self.view.center;
+    label.text = @"Master Branch";
+    label.font = [UIFont systemFontOfSize:23];
+    label.textColor = [UIColor blackColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
 
 }
 

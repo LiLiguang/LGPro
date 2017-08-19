@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor blueColor];
 
     UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(self.view.center.x - 50, 50, 100, 44)];
     

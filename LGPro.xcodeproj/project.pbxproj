@@ -13,6 +13,7 @@
 		041C3ADB1F480F03004579F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C3AD91F480F03004579F6 /* Main.storyboard */; };
 		041C3ADD1F480F03004579F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C3ADC1F480F03004579F6 /* Assets.xcassets */; };
 		041C3AE01F480F03004579F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C3ADE1F480F03004579F6 /* LaunchScreen.storyboard */; };
+		0455B4821F480FFB006A889C /* MiniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455B4811F480FFB006A889C /* MiniViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		041C3ADC1F480F03004579F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041C3ADF1F480F03004579F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041C3AE11F480F03004579F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0455B4801F480FFB006A889C /* MiniViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniViewController.h; sourceTree = "<group>"; };
+		0455B4811F480FFB006A889C /* MiniViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		041C3ACF1F480F03004579F6 /* LGPro */ = {
 			isa = PBXGroup;
 			children = (
+				0455B47F1F480FE3006A889C /* MiniWork */,
 				041C3AD31F480F03004579F6 /* AppDelegate.h */,
 				041C3AD41F480F03004579F6 /* AppDelegate.m */,
 				041C3AD61F480F03004579F6 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				041C3AD11F480F03004579F6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0455B47F1F480FE3006A889C /* MiniWork */ = {
+			isa = PBXGroup;
+			children = (
+				0455B4801F480FFB006A889C /* MiniViewController.h */,
+				0455B4811F480FFB006A889C /* MiniViewController.m */,
+			);
+			path = MiniWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +123,7 @@
 				TargetAttributes = {
 					041C3ACC1F480F03004579F6 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = UWLCLX2CP4;
+						DevelopmentTeam = JKP4G35J39;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,6 +167,7 @@
 				041C3AD81F480F03004579F6 /* ViewController.m in Sources */,
 				041C3AD51F480F03004579F6 /* AppDelegate.m in Sources */,
 				041C3AD21F480F03004579F6 /* main.m in Sources */,
+				0455B4821F480FFB006A889C /* MiniViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UWLCLX2CP4;
+				DEVELOPMENT_TEAM = JKP4G35J39;
 				INFOPLIST_FILE = LGPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mars.LGPro;
@@ -287,7 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UWLCLX2CP4;
+				DEVELOPMENT_TEAM = JKP4G35J39;
 				INFOPLIST_FILE = LGPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mars.LGPro;
@@ -314,6 +328,7 @@
 				041C3AE61F480F03004579F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

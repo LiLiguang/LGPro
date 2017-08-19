@@ -26,10 +26,14 @@
     title.font = [UIFont systemFontOfSize:19];
     [self.view addSubview:title];
     
-    
-    
-    
-    
+    UIButton *centerButton = [UIButton buttonWithType: UIButtonTypeCustom];
+    centerButton.frame = CGRectMake(0, 0, 120, 44);
+    centerButton.center = self.view.center;
+    [centerButton setBackgroundColor:[UIColor redColor]];
+    [centerButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [centerButton setTitle:@"centerBtn" forState:UIControlStateNormal];
+    centerButton.layer.cornerRadius = 5;
+    [self.view addSubview:centerButton];
     
 }
 

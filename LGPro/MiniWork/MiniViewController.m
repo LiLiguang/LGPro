@@ -21,7 +21,7 @@
 
     UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(self.view.center.x - 50, 50, 100, 44)];
     
-    title.text = @"Mini work";
+    title.text = @"第一次修改";
     title.textColor = [UIColor blackColor];
     title.font = [UIFont systemFontOfSize:19];
     [self.view addSubview:title];
@@ -41,7 +41,9 @@
 - (void)showAlert {
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"MiniWork" message:@"Hello world" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"Cancle" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
     [alertVC addAction:cancleAction];
+    [alertVC addAction:confirmAction];
     [self presentViewController:alertVC animated:YES completion:nil];
 }
 
